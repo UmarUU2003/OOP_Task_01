@@ -11,6 +11,12 @@ public class RightTriangle {
         hypotenuseLength = Math.sqrt(Math.pow(firstLegLength, 2) + Math.pow(secondLegLength, 2));
     }
 
+    public double area(){
+        return getFirstLegLength() * getSecondLegLength() / 2;
+    }
+    public double perimeter(){
+        return getHypotenuseLength() + getFirstLegLength() + getSecondLegLength();
+    }
     public double getHypotenuseLength() {
         return hypotenuseLength;
     }
@@ -21,5 +27,15 @@ public class RightTriangle {
 
     public double getSecondLegLength() {
         return secondLegLength;
+    }
+
+    public void setFirstLegLength(double firstLegLength) {
+        this.firstLegLength = firstLegLength;
+        hypotenuseLength = Math.sqrt(Math.pow(firstLegLength, 2) + Math.pow(secondLegLength, 2));
+    }
+
+    public void setSecondLegLength(double secondLegLength) {
+        this.secondLegLength = secondLegLength;
+        hypotenuseLength = Math.sqrt(Math.pow(firstLegLength, 2) + Math.pow(secondLegLength, 2));
     }
 }

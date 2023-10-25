@@ -15,6 +15,13 @@ public class Car {
         this.transmission = transmission;
     }
 
+    public void info(){
+        System.out.println("Information about car:");
+        System.out.println("----------------------");
+        System.out.println(this);
+        System.out.println("----------------------");
+    }
+
     public String getColor() {
         return color;
     }
